@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #240046;
+  color: antiquewhite;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2{
+  font-size: 36px;
+}
+
+#avg-price {
+  font-size: 24px;
+}
+
+#spacer {
+  padding: 5px;
+  width: 100%;
+  background-color: #e0aaff;
+}
+
+#header-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+#postings-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+  max-width: 600px;
+  margin-top: -40px;
+  
+}
+
+ul{
+  list-style-type: none;
+  padding: 5px;
+}
+
+li{
+  padding: 5px;
+}

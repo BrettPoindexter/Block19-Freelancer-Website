@@ -24,7 +24,7 @@ function calculateSum() {
   }
 }
 
-const addPostingIntervalId = setInterval(addPosting, 1000);
+const addPostingIntervalId = setInterval(addPosting, 1500);
 
 render();
 
@@ -52,7 +52,7 @@ function render() {
   const price = document.querySelector('.price');
   const priceElements = postings.map((postings) => {
     const element = document.createElement('li');
-    element.textContent = postings.pricing;
+    element.textContent = `$${postings.pricing}`;
     return element;
   });
   price.replaceChildren(...priceElements);
